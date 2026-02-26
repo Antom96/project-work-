@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agrivar • Sostenibilità</title>
+  <meta name="description" content="Pagina dedicata alla sostenibilità di Agrivar: iniziative, impegni e download del Report di Sostenibilità." />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!--
+    NOTE (per il rapporto):
+    - Il foglio di stile è separato (css/styles.css) per mantenere il codice modulare e riutilizzabile.
+    - Le risorse statiche (logo, PDF) sono in cartelle dedicate (assets/, reports/) per una struttura realistica da repository.
+  -->
+</head>
+
+<body>
+  <!-- Header: logo + navigazione interna con ancore (esperienza utente semplice, accessibile e senza JS). -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Agrivar - Vai all'inizio pagina">
+        <img class="brand-logo" src="assets/logo-agrivar.png" alt="Logo Agrivar" />
+      </a>
+
+      <nav class="nav" aria-label="Navigazione principale">
+        <a class="nav-link" href="#sostenibilita">Sostenibilità</a>
+        <a class="nav-link" href="#report">Report</a>
+        <a class="nav-link" href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero: comunica immediatamente scopo della pagina e richiama i colori aziendali. -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Sostenibilità d’impresa</h1>
+          <p>
+            Agrivar integra pratiche agricole, tutela del territorio e miglioramento continuo delle performance ESG.
+            In questa pagina trovi una sintesi delle principali attività e il download dei Report di Sostenibilità.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#report">Scarica il report</a>
+            <a class="btn btn-ghost" href="#sostenibilita">Scopri le attività</a>
+          </div>
+        </div>
+
+        <!-- Pannello “quick facts”: piccole evidenze numeriche in formato leggibile (senza appesantire con elenchi). -->
+        <aside class="hero-facts" aria-label="Dati chiave dal report">
+          <div class="fact">
+            <div class="fact-kpi">256 ha</div>
+            <div class="fact-label">Superficie agricola</div>
+          </div>
+          <div class="fact">
+            <div class="fact-kpi">61%</div>
+            <div class="fact-label">Terreni in bio certificato</div>
+          </div>
+          <div class="fact">
+            <div class="fact-kpi">160.000+</div>
+            <div class="fact-label">Alberi di olivo</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Sezione: divulgazione attività di sostenibilità (testo discorsivo + card tematiche). -->
+    <section id="sostenibilita" class="section">
+      <div class="container">
+        <h2>Attività e impegni ESG</h2>
+        <p class="lead">
+          L’approccio alla sostenibilità si concentra su ambiente, persone e governance.
+          Le iniziative riportate sono tratte dall’ultimo Report di Sostenibilità disponibile (anno 2023).
+        </p>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Ambiente</h3>
+            <p>
+              Agrivar adotta pratiche di mitigazione degli effetti del cambiamento climatico sulle colture,
+              con soluzioni come reti antigrandine e strumenti di agricoltura di precisione. L’attenzione
+              alla risorsa idrica è supportata da irrigazione localizzata e sperimentazione di sensori nel suolo,
+              insieme a sistemi di recupero e riutilizzo dell’acqua.
+            </p>
+            <p class="card-note">
+              Biodiversità: progetto di riqualificazione agronomica con recupero di varietà locali di olivo.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Persone</h3>
+            <p>
+              La dimensione sociale si riflette nella gestione delle risorse umane e nella sicurezza sul lavoro.
+              Il report evidenzia l’impegno su equità e inclusione e la presenza di strumenti di welfare, come
+              flessibilità organizzativa e convenzioni con realtà del territorio.
+            </p>
+            <p class="card-note">
+              Formazione: focus prevalente su salute e sicurezza sul lavoro nel periodo rendicontato.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Governance</h3>
+            <p>
+              Il modello di governance considera la conformità normativa e procedure di segnalazione (whistleblowing).
+              Inoltre, l’azienda prevede la valutazione dei fornitori con criteri ESG e l’estensione dei presidi sui diritti umani
+              anche alla catena di approvvigionamento.
+            </p>
+            <p class="card-note">
+              Miglioramento continuo: il report include un piano d’azione con raccomandazioni e priorità.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione: download report (con percorso file relativo, adatto a GitHub Pages o hosting statico). -->
+    <section id="report" class="section section-alt">
+      <div class="container">
+        <h2>Report di sostenibilità</h2>
+        <p class="lead">
+          Qui puoi scaricare i documenti ufficiali di rendicontazione della sostenibilità.
+        </p>
+
+        <div class="report-list">
+          <article class="report-item">
+            <div class="report-meta">
+              <h3 class="report-title">Report di Sostenibilità • 2023</h3>
+              <p class="report-desc">
+                Documento redatto secondo GRI Sustainability Reporting Standards e sottoposto a revisione esterna.
+              </p>
+              <div class="badges" aria-label="Etichette informative">
+                <span class="badge">GRI</span>
+                <span class="badge">ESG</span>
+                <span class="badge">PDF</span>
+              </div>
+            </div>
+
+            <!-- Attributo download: suggerisce al browser di scaricare il file con nome locale. -->
+            <a class="btn btn-primary" href="reports/report-sostenibilita-2023.pdf" download>
+              Download PDF
+            </a>
+          </article>
+
+          <article class="report-item report-item-disabled" aria-disabled="true">
+            <div class="report-meta">
+              <h3 class="report-title">Report di Sostenibilità • 2024</h3>
+              <p class="report-desc">
+                Documento in aggiornamento. Torna a visitare questa pagina per le nuove pubblicazioni.
+              </p>
+              <div class="badges" aria-label="Etichette informative">
+                <span class="badge">Prossima uscita</span>
+              </div>
+            </div>
+
+            <!-- Bottone disabilitato (solo UI), non include link attivo per evitare download non disponibili. -->
+            <span class="btn btn-disabled">Non disponibile</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione contatti (informazioni coerenti con il report). -->
+    <section id="contatti" class="section">
+      <div class="container">
+        <h2>Contatti</h2>
+        <p class="lead">
+          Per informazioni sulla sostenibilità e sulla rendicontazione, puoi utilizzare i contatti aziendali.
+        </p>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-label">Sede</div>
+            <div class="contact-value">Castel San Pietro Terme (BO), Italia</div>
+          </div>
+          <div>
+            <div class="contact-label">Sito</div>
+            <div class="contact-value"><a href="https://www.agrivar.com" target="_blank" rel="noopener">www.agrivar.com</a></div>
+          </div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value"><a href="mailto:info@agrivar.com">info@agrivar.com</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: chiusura pagina con richiamo brand e link rapido al report. -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/logo-agrivar.png" alt="Logo Agrivar" />
+        <p class="footer-note">Pagina informativa dedicata alla sostenibilità e alla trasparenza verso gli stakeholder.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#report">Download report</a>
+        <a href="#sostenibilita">Attività ESG</a>
+        <a href="#top">Torna su</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
